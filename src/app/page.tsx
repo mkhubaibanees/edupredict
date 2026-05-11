@@ -74,7 +74,7 @@ export default function LandingPage() {
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/50" /><div className="w-2.5 h-2.5 rounded-full bg-yellow-500/50" /><div className="w-2.5 h-2.5 rounded-full bg-green-500/50" />
               </div>
               <div className="aspect-[16/9] bg-slate-950 flex flex-col items-center justify-center group-hover:scale-[1.01] transition-transform duration-700 relative overflow-hidden">
-                <Image src="/screenshots/admin.png" alt="Admin Dashboard" fill className="object-contain p-2 md:p-4" />
+                <Image src="/screenshots/admin-dash.png" alt="Admin Dashboard" fill className="object-contain p-2 md:p-4" />
                 <BarChart3 className="w-12 h-12 md:w-16 md:h-16 text-blue-500/20 mb-4" />
                 <p className="text-[10px] md:text-xs font-bold text-slate-500 uppercase tracking-[0.3em]">Place Admin Dashboard Screenshot Here</p>
               </div>
@@ -94,7 +94,7 @@ export default function LandingPage() {
 
                 {/* THUMBNAIL PLACEHOLDER */}
                 <div className={cn("w-full aspect-video rounded-xl mb-6 flex flex-col items-center justify-center border relative overflow-hidden", portal.bg, portal.border)}>
-                  <Image src={`/screenshots/${portal.name.toLowerCase().split(' ')[0]}.png`} alt={portal.name} fill className="object-contain p-2 rounded-xl" />
+                  <Image src={`/screenshots/${portal.name.toLowerCase().split(' ')[0]}-dash.png`} alt={portal.name} fill className="object-contain p-2 rounded-xl" />
                 </div>
 
                 <div className="flex items-center gap-3 mb-3">
