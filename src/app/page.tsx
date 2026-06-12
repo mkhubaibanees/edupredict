@@ -29,13 +29,13 @@ export default function LandingPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 overflow-x-hidden selection:bg-blue-500/30 selection:text-blue-200 -mx-6 -mt-20 md:-mx-10 md:-mt-10 flex flex-col">
 
-      {/* GLOW BACKGROUND */}
+      {/* Background glow effects */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-blue-600/10 blur-[120px] rounded-full" />
         <div className="absolute bottom-[10%] right-[-10%] w-[30%] h-[50%] bg-purple-600/10 blur-[120px] rounded-full" />
       </div>
 
-      {/* NAVBAR (FIXED & STICKY) */}
+      {/* Main sticky navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur-xl h-16 md:h-20 flex items-center shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 w-full flex items-center justify-between">
           <div className="flex items-center gap-2 md:gap-3">
@@ -47,13 +47,20 @@ export default function LandingPage() {
             <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           </div>
-          <Link href="/admin" className="px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-white text-slate-950 font-black text-[10px] md:text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl">
-            Live Preview
-          </Link>
+
+          {/* Updated CTA section with Gumroad link */}
+          <div className="flex items-center gap-3">
+            <Link href="/admin" className="hidden md:inline-flex px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-white/10 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:bg-white/20 transition-all">
+              Live Demo
+            </Link>
+            <a href="https://khubaibanees.gumroad.com/l/edupredict-ui" target="_blank" rel="noopener noreferrer" className="px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-blue-600 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-blue-500/25">
+              Get Source Code
+            </a>
+          </div>
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+      {/* Hero section heading and mockup */}
       <main className="relative z-10 pt-16 md:pt-24 pb-12">
         <section className="max-w-7xl mx-auto px-6 text-center flex flex-col items-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-[10px] font-black uppercase tracking-widest mb-6">
@@ -66,7 +73,7 @@ export default function LandingPage() {
             The world's first unified SaaS platform that uses AI to predict student success, automate grading, and bridge the gap between Teachers and Parents.
           </motion.p>
 
-          {/* MAIN DASHBOARD MOCKUP PREVIEW (ADMIN) */}
+          {/* Admin dashboard screenshot wrapper */}
           <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.4 }} className="relative w-full max-w-5xl group">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
             <div className="relative bg-slate-900 rounded-[1.5rem] border border-white/10 overflow-hidden shadow-2xl">
@@ -82,7 +89,7 @@ export default function LandingPage() {
           </motion.div>
         </section>
 
-        {/* PORTAL NAVIGATION GRID WITH THUMBNAILS */}
+        {/* Dynamic portal routing grid */}
         <section id="portals" className="max-w-7xl mx-auto px-6 py-24">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Unified Experience</h2>
@@ -92,7 +99,7 @@ export default function LandingPage() {
             {portals.map((portal, i) => (
               <Link key={i} href={portal.href} className="group p-5 rounded-3xl bg-slate-900/40 border border-white/5 hover:border-white/20 transition-all hover:-translate-y-2 flex flex-col">
 
-                {/* THUMBNAIL PLACEHOLDER */}
+                {/* Portal thumbnails */}
                 <div className={cn("w-full aspect-video rounded-xl mb-6 flex flex-col items-center justify-center border relative overflow-hidden", portal.bg, portal.border)}>
                   <Image src={`/screenshots/${portal.name.toLowerCase().split(' ')[0]}-dash.png`} alt={portal.name} fill className="object-contain p-2 rounded-xl" />
                 </div>
@@ -115,7 +122,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* PRICING TABLE */}
+        {/* Pricing tier mapping */}
         <section id="pricing" className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Flexible Licensing</h2>
@@ -139,7 +146,18 @@ export default function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                <button className={cn("w-full py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all", plan.popular ? "bg-blue-600 text-white" : "bg-white/5 text-white hover:bg-white/10")}>Get Started</button>
+                {/* Updated pricing buttons wired to Gumroad checkout */}
+                <a
+                  href="https://khubaibanees.gumroad.com/l/edupredict-ui"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "block text-center w-full py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all",
+                    plan.popular ? "bg-blue-600 text-white hover:bg-blue-500 shadow-lg shadow-blue-500/25" : "bg-white/5 text-white hover:bg-white/10"
+                  )}
+                >
+                  Purchase Template
+                </a>
               </div>
             ))}
           </div>
@@ -150,15 +168,24 @@ export default function LandingPage() {
           <h2 className="text-2xl font-black text-center text-white mb-12 uppercase tracking-tighter">Common Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="rounded-2xl border border-white/5 bg-slate-900/20 overflow-hidden">
+              <div key={i} className="rounded-2xl border border-white/5 bg-slate-900/20 overflow-hidden hover:border-white/10 transition-colors">
                 <button onClick={() => setActiveFaq(activeFaq === i ? null : i)} className="w-full p-5 flex items-center justify-between text-left focus:outline-none">
-                  <span className="text-sm font-bold text-slate-200">{faq.q}</span>
-                  {activeFaq === i ? <Minus className="w-4 h-4 text-blue-400" /> : <Plus className="w-4 h-4 text-slate-500" />}
+                  <span className="text-sm md:text-base font-bold text-slate-200">{faq.q}</span>
+                  {activeFaq === i ? <Minus className="w-4 h-4 text-blue-400 shrink-0" /> : <Plus className="w-4 h-4 text-slate-500 shrink-0" />}
                 </button>
                 <AnimatePresence>
                   {activeFaq === i && (
-                    <motion.div initial={{ height: 0 }} animate={{ height: 'auto' }} exit={{ height: 0 }} className="px-5 pb-5 text-xs text-slate-400 leading-relaxed overflow-hidden">
-                      {faq.a}
+                    <motion.div 
+                      initial={{ height: 0, opacity: 0 }} 
+                      animate={{ height: 'auto', opacity: 1 }} 
+                      exit={{ height: 0, opacity: 0 }} 
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      {/* Added top border, better padding, and lighter text color */}
+                      <div className="px-5 pb-5 pt-4 mt-1 border-t border-white/5 text-sm text-slate-300 leading-relaxed">
+                        {faq.a}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
