@@ -175,10 +175,10 @@ export default function LandingPage() {
                 </button>
                 <AnimatePresence>
                   {activeFaq === i && (
-                    <motion.div 
-                      initial={{ height: 0, opacity: 0 }} 
-                      animate={{ height: 'auto', opacity: 1 }} 
-                      exit={{ height: 0, opacity: 0 }} 
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.2 }}
                       className="overflow-hidden"
                     >
@@ -193,6 +193,31 @@ export default function LandingPage() {
             ))}
           </div>
         </section>
+
+        {/* CUSTOM DEVELOPMENT CTA SECTION */}
+        <section className="max-w-4xl mx-auto px-6 py-12 mb-12">
+          <div className="rounded-[2rem] bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-white/10 p-8 md:p-12 text-center flex flex-col items-center relative overflow-hidden">
+            {/* Soft background glow */}
+            <div className="absolute inset-0 bg-blue-500/5 blur-[80px] rounded-full pointer-events-none" />
+
+            <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tighter relative z-10">
+              Need a custom SaaS built for your business?
+            </h2>
+            <p className="text-slate-400 mb-8 max-w-2xl text-sm md:text-base relative z-10">
+              I specialize in building scalable frontend architectures, complex ERP dashboards, and full-stack solutions. Let's collaborate to turn your idea into reality.
+            </p>
+            <a
+              href="https://www.fiverr.com/khubaibanees/build-a-modern-next-js-react-admin-dashboard-ui-frontend?ref_ctx_id=7ef81208dc8d4af880b448d0ba52656c&pckg_id=1&source=seller_page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 rounded-xl bg-white text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-white/10 flex items-center gap-2 relative z-10"
+            >
+              <Zap className="w-4 h-4 text-blue-600 fill-blue-600" />
+              Hire Me on Fiverr
+            </a>
+          </div>
+        </section>
+
       </main>
 
       <footer className="mt-auto py-12 border-t border-white/5 text-center relative z-10">
