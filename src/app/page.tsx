@@ -44,18 +44,14 @@ export default function LandingPage() {
           </div>
           <div className="hidden lg:flex gap-8 text-sm font-bold text-slate-400 uppercase tracking-widest">
             <a href="#portals" className="hover:text-white transition-colors">Portals</a>
-            {/* <a href="#pricing" className="hover:text-white transition-colors">Pricing</a> */}
+            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           </div>
 
-          {/* Updated CTA section with Gumroad link */}
           <div className="flex items-center gap-3">
             <Link href="/admin" className="hidden md:inline-flex px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-white/10 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:bg-white/20 transition-all">
               Live Demo
             </Link>
-            {/* <a href="https://khubaibanees.gumroad.com/l/edupredict-ui" target="_blank" rel="noopener noreferrer" className="px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-blue-600 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-blue-500/25">
-              Get Source Code
-            </a> */}
           </div>
         </div>
       </nav>
@@ -123,9 +119,9 @@ export default function LandingPage() {
         </section>
 
         {/* Pricing tier mapping */}
-        {/* <section id="pricing" className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
+        <section id="pricing" className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Flexible Licensing</h2>
+            <h2 className="text-3xl font-black text-white uppercase tracking-tighter">DEMO PRICING PLANS</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -138,7 +134,7 @@ export default function LandingPage() {
                 plan.popular ? "bg-blue-600/10 border-blue-500/50 shadow-2xl shadow-blue-500/10" : "bg-slate-900/30 border-white/10"
               )}>
                 <h3 className="font-bold text-white mb-1">{plan.name}</h3>
-                <div className="text-3xl font-black text-white mb-6">${plan.price}<span className="text-sm text-slate-500 font-medium">/mo</span></div>
+                <div className="text-3xl font-black text-white mb-6">${plan.price}<span className="text-sm text-slate-500 font-medium">/mo (Dummy)</span></div>
                 <ul className="space-y-4 mb-8 flex-1">
                   {plan.features.map((f, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-xs text-slate-400">
@@ -147,20 +143,19 @@ export default function LandingPage() {
                   ))}
                 </ul>
                 <a
-                  href="https://khubaibanees.gumroad.com/l/edupredict-ui"
-                  target="_blank"
+                  href="#"
                   rel="noopener noreferrer"
                   className={cn(
                     "block text-center w-full py-3 rounded-xl font-bold text-xs uppercase tracking-widest transition-all",
                     plan.popular ? "bg-blue-600 text-white hover:bg-blue-500 shadow-lg shadow-blue-500/25" : "bg-white/5 text-white hover:bg-white/10"
                   )}
                 >
-                  Purchase Template
+                  Select Demo Plan
                 </a>
               </div>
             ))}
           </div>
-        </section> */}
+        </section>
 
         {/* FAQ SECTION */}
         <section id="faq" className="max-w-3xl mx-auto px-6 py-24">
@@ -193,28 +188,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* CUSTOM DEVELOPMENT CTA SECTION */}
-        {/* <section className="max-w-4xl mx-auto px-6 py-12 mb-12">
-          <div className="rounded-[2rem] bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-white/10 p-8 md:p-12 text-center flex flex-col items-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-blue-500/5 blur-[80px] rounded-full pointer-events-none" />
-
-            <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tighter relative z-10">
-              Need a custom SaaS built for your business?
-            </h2>
-            <p className="text-slate-400 mb-8 max-w-2xl text-sm md:text-base relative z-10">
-              I specialize in building scalable frontend architectures, complex ERP dashboards, and full-stack solutions. Let's collaborate to turn your idea into reality.
-            </p>
-            <a
-              href="https://www.fiverr.com/khubaibanees/build-a-modern-next-js-react-admin-dashboard-ui-frontend?ref_ctx_id=7ef81208dc8d4af880b448d0ba52656c&pckg_id=1&source=seller_page"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl bg-white text-slate-950 font-black text-xs md:text-sm uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-white/10 flex items-center gap-2 relative z-10"
-            >
-              <Zap className="w-4 h-4 text-blue-600 fill-blue-600" />
-              Hire Me on Fiverr
-            </a>
-          </div>
-        </section> */}
+        
 
       </main>
 
