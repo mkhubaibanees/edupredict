@@ -37,9 +37,8 @@ export default function RiskTable() {
             </div>
 
             {/* Scrollable Container */}
-            <div className="overflow-x-auto [&::-webkit-scrollbar]:hidden">
+            <div className="overflow-x-auto no-scrollbar">
                 <div className="min-w-[800px] flex flex-col gap-3">
-                    
                     {/* Modern Grid Header */}
                     <div className="grid grid-cols-12 gap-4 px-4 py-2 text-slate-500 text-xs uppercase tracking-widest font-semibold border-b border-white/5 pb-3">
                         <div className="col-span-3">Student</div>
@@ -56,7 +55,6 @@ export default function RiskTable() {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ delay: index * 0.1 }}
                             key={student.id}
-                            // Pura row ab 1 single DIV hay. No more HTML table gaps!
                             className="grid grid-cols-12 gap-4 items-center px-4 py-4 bg-white/5 hover:bg-white/10 transition-colors rounded-xl group"
                         >
                             {/* Student Column */}
@@ -66,7 +64,7 @@ export default function RiskTable() {
                                 </div>
                                 <span className="font-medium text-slate-200 truncate">{student.name}</span>
                             </div>
-                            
+
                             {/* Course Column */}
                             <div className="col-span-3 text-slate-400 text-sm truncate">
                                 {student.course}

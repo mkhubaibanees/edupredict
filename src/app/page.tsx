@@ -44,7 +44,7 @@ export default function LandingPage() {
           </div>
           <div className="hidden lg:flex gap-8 text-sm font-bold text-slate-400 uppercase tracking-widest">
             <a href="#portals" className="hover:text-white transition-colors">Portals</a>
-            <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
+            {/* <a href="#pricing" className="hover:text-white transition-colors">Pricing</a> */}
             <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
           </div>
 
@@ -53,9 +53,9 @@ export default function LandingPage() {
             <Link href="/admin" className="hidden md:inline-flex px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-white/10 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:bg-white/20 transition-all">
               Live Demo
             </Link>
-            <a href="https://khubaibanees.gumroad.com/l/edupredict-ui" target="_blank" rel="noopener noreferrer" className="px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-blue-600 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-blue-500/25">
+            {/* <a href="https://khubaibanees.gumroad.com/l/edupredict-ui" target="_blank" rel="noopener noreferrer" className="px-4 py-2 md:px-6 md:py-2.5 rounded-xl bg-blue-600 text-white font-black text-[10px] md:text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-xl shadow-blue-500/25">
               Get Source Code
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>
@@ -123,7 +123,7 @@ export default function LandingPage() {
         </section>
 
         {/* Pricing tier mapping */}
-        <section id="pricing" className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
+        {/* <section id="pricing" className="max-w-5xl mx-auto px-6 py-20 border-t border-white/5">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-black text-white uppercase tracking-tighter">Flexible Licensing</h2>
           </div>
@@ -146,7 +146,6 @@ export default function LandingPage() {
                     </li>
                   ))}
                 </ul>
-                {/* Updated pricing buttons wired to Gumroad checkout */}
                 <a
                   href="https://khubaibanees.gumroad.com/l/edupredict-ui"
                   target="_blank"
@@ -161,7 +160,7 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* FAQ SECTION */}
         <section id="faq" className="max-w-3xl mx-auto px-6 py-24">
@@ -195,9 +194,8 @@ export default function LandingPage() {
         </section>
 
         {/* CUSTOM DEVELOPMENT CTA SECTION */}
-        <section className="max-w-4xl mx-auto px-6 py-12 mb-12">
+        {/* <section className="max-w-4xl mx-auto px-6 py-12 mb-12">
           <div className="rounded-[2rem] bg-gradient-to-r from-blue-600/10 to-purple-600/10 border border-white/10 p-8 md:p-12 text-center flex flex-col items-center relative overflow-hidden">
-            {/* Soft background glow */}
             <div className="absolute inset-0 bg-blue-500/5 blur-[80px] rounded-full pointer-events-none" />
 
             <h2 className="text-2xl md:text-3xl font-black text-white mb-4 tracking-tighter relative z-10">
@@ -216,7 +214,7 @@ export default function LandingPage() {
               Hire Me on Fiverr
             </a>
           </div>
-        </section>
+        </section> */}
 
       </main>
 

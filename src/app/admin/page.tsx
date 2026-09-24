@@ -43,7 +43,7 @@ export default function AdminDashboardPage() {
             {/* 2. Added initial="hidden" animate="visible" to individual sections */}
             <motion.div
                 initial="hidden" animate="visible" variants={itemVariants}
-                className="flex flex-col md:flex-row md:items-center justify-between gap-4"
+                className="flex flex-col md:flex-row md:items-center justify-between"
             >
                 <div>
                     <h1 className="text-4xl font-extrabold text-white tracking-tighter">Admin Dashboard</h1>

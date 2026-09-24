@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-/* 
-  Next.js ke default :root aur body styles humne delete kar diye hain 
-  taake browser zabardasti Light Mode force na kar sakay.
-*/
-
-/* Hamara Premium SaaS Custom Scrollbar */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
@@ -21,4 +15,15 @@
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #475569;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scrollbar {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
