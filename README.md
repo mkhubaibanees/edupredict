@@ -40,7 +40,7 @@ Looking for a ready-made Educational SaaS dashboard UI?
 
 The complete frontend template is available on Gumroad:
 
-👉 **[Purchase the EduPredict UI Template](https://khubaibanees.gumroad.com/l/edupredict-ui)**
+👉 **[Get the Source Code](https://khubaibanees.gumroad.com/l/edupredict-ui)**
 
 ## 🚀 Getting Started
 
