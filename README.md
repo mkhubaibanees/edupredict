@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎓 EduPredict AI
 
-## Getting Started
+**EduPredict AI** is a modern Educational SaaS dashboard concept built with Next.js and React. It features a multi-portal architecture designed for admins, teachers, students, and parents, with a strong focus on clean UI, reusable components, responsive layouts, and scalable frontend structure.
 
-First, run the development server:
+🔗 **[Live Demo](https://edupredict-omega.vercel.app/)**
+
+## 🌟 Multi-Portal Architecture
+
+EduPredict AI includes four dedicated dashboard experiences:
+
+- **🛡️ Admin Portal:** Institutional analytics, system overview, and administrative controls.
+- **📚 Teacher Portal:** Class management, student tracking, grading interfaces, and academic insights.
+- **👨‍🎓 Student Portal:** Personalized dashboard, progress tracking, assignments, and learning activities.
+- **👪 Parent Portal:** Student progress monitoring, performance insights, and engagement overview.
+
+## ✨ Key Features
+
+- Four dedicated user portals
+- Modern SaaS dashboard interface
+- Responsive layouts for desktop and mobile
+- Complex data tables and analytics views
+- Reusable React components
+- Smooth interface animations
+- Dark-mode focused UI
+- Demo pricing and SaaS landing page
+- Clean and scalable frontend architecture
+
+## 💻 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Library:** React
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+## 🛒 Get the Source Code
+
+Looking for a ready-made Educational SaaS dashboard UI?
+
+The complete frontend template is available on Gumroad:
+
+👉 **[Purchase the EduPredict UI Template](https://khubaibanees.gumroad.com/l/edupredict-ui)**
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/mkhubaibanees/edupredict.git
+cd edupredict
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Project Purpose
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+EduPredict AI was built to demonstrate frontend development skills in modern SaaS dashboards, including multi-role interfaces, reusable component architecture, responsive design, data-heavy layouts, and polished user experiences.
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is intended for portfolio, demonstration, and template distribution purposes.
